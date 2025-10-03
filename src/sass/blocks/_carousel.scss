@@ -1,0 +1,60 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+  
+.carousel {
+    padding: 108px 0 53px;
+
+    &__inner {
+        position: relative;
+        img {
+            margin: 0  auto;
+        }
+    }
+    .slick-prev, .slick-next {
+        position: absolute;
+        top: 43.5%;
+        transform: translateY(-50%);
+        border: none;
+        left: 2px;
+        background: none;
+        padding: 0;
+        z-index: 1;
+        img {
+            width: 31px;
+            height: 50px;
+        }
+    }
+    .slick-next {
+        right: 1px;
+        left: auto;
+        img {
+            width: 30px;
+        }
+    }
+    .slick-dots {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        text-align: center;
+        li {
+            display: inline-block;
+            font-size: 0;
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+            button {
+                background-color: #fff;
+                border-radius: 5px;
+                border: v.$main-color 2px solid;
+                width: 25px;
+                height: 10px;
+            }
+        }
+        .slick-active {
+            button {
+                background-color: v.$main-color;
+                transition: background-color .5s;
+            }
+        }
+    }
+}

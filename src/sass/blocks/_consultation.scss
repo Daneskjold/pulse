@@ -1,0 +1,16 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.consultation {
+    min-height: 680px;
+    padding: 100px 0px 110px;
+    background: url(../img/consultation.png) no-repeat center/cover;
+
+    &__descr {
+        color: #FFFFFF;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 500;
+        margin-top: 8px;
+    }
+}
