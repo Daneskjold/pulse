@@ -11,6 +11,13 @@
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
+    transition: text-shadow, .2s, box-shadow .2s, translate 1s;
+
+    &:hover {
+        text-shadow: 0px 0px 1px #FFFFFF;
+        box-shadow: 2px 2px 8px #FFFFFF;
+        transform: translate(1px, -1px);
+    }
 
     &_main {
         margin-top: 67px;
@@ -31,5 +38,8 @@
         width: 131px;
         height: 40px;
         font-size: 14px;
+        &:hover {
+            box-shadow: 3px 3px 8px v.$red-shadow;
+        }
     }
 }

@@ -1,17 +1,18 @@
-@use "base/variables" as v;
-@use "base/mixins" as m;
-@use "blocks/promo";
-@use "blocks/header";
-@use "blocks/buttons";
-@use "blocks/titles";
-@use "blocks/advantages";
-@use "blocks/consultation";
-@use "blocks/forms";
-@use "blocks/carousel";
-@use "blocks/catalog";
-@use "blocks/feed";
-@use "blocks/footer";
-@use "base/media";
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+@use 'blocks/promo';
+@use 'blocks/header';
+@use 'blocks/buttons';
+@use 'blocks/titles';
+@use 'blocks/advantages';
+@use 'blocks/consultation';
+@use 'blocks/forms';
+@use 'blocks/carousel';
+@use 'blocks/catalog';
+@use 'blocks/footer';
+@use 'blocks/feed';
+@use 'base/media';
 
 body {
     font-family: 'Museo Sans', sans-serif;
@@ -22,3 +23,12 @@ body {
     max-width: 950px;
     margin: 0 auto;
 }
+
+a {
+    transition: text-shadow .2s, transform .2s;
+    &:hover {
+        text-shadow: 0px 0px 2px #FFFFFF;
+        transform: translate(1px,-1px);
+    }
+}
+

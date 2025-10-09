@@ -47,6 +47,7 @@
         display: none;
         flex-wrap: wrap;
         justify-content: space-between;
+
         &_active {
             display: flex;
         }
@@ -90,6 +91,10 @@
             font-size: 14px;
             font-weight: 500;
             line-height: 14px;
+
+            &:hover {
+                text-shadow: 1px 1px 5px v.$red-shadow;
+            }
         }
 
         hr {
@@ -177,16 +182,20 @@
         }
 
         &__back {
+            display: inline-block;
             position: absolute;
             bottom: 7px;
             left: 50%;
             transform: translateX(calc(-50% - 11px));
-            display: block;
             color: v.$main-color;
-            font-size: 14px;    
+            font-size: 14px;
             font-weight: 500;
             line-height: 14px;
             text-transform: uppercase;
+            &:hover {
+                transform: translateX(calc(-47% - 11px)) translateY(-1px);                
+                text-shadow: 0px 0px 5px v.$red-shadow;
+            }
         }
     }
 }

@@ -49,8 +49,10 @@
         line-height: 25px;
         margin-top: 11px;
         a {
+            display: inline-block;
             color: #FFFFFF;
             text-transform: uppercase;
+            text-decoration: none;
         }
     }
 

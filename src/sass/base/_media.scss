@@ -191,6 +191,7 @@
 // }
 
 @media (max-width: 970px) {
+
     .container {
         padding: 0 10px;
     }
@@ -217,6 +218,23 @@
         min-width: 300px;
     }
 
+    .feed {
+        &__item {
+            margin-left: 20px;
+        }
+
+        &__text {
+            margin: 0 0 0 40px;
+        }
+    }
+
+    .footer {
+        &__info {
+            padding: 30px;
+            width: 400px;
+            height: 225px;
+        }
+    }
 }
 
 @media (max-width: 800px) {
@@ -233,10 +251,12 @@
     .title_left {
         text-align: center;
     }
+
     .consultation {
         min-height: 550px;
         padding: 50px 0px 50px;
         text-align: center;
+
         .feed-form {
             margin: 38px auto 0;
         }
@@ -244,6 +264,7 @@
 
     .carousel {
         padding: 50px 0px 50px;
+
         &__inner {
             img {
                 width: 100%;
@@ -264,6 +285,7 @@
             flex-wrap: wrap;
             margin: 46px 11px;
         }
+
         &__tab {
             margin-bottom: 10px;
         }
@@ -273,6 +295,25 @@
         max-width: 80%;
         min-width: 300px;
         margin: 0 auto 21px;
+    }
+
+    .footer {
+        &__info {
+            width: 100%;
+            height: 190px;
+        }
+
+        &__addr {
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 18px;
+        }
+
+        &__phone {
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 18px;
+        }
     }
 }
 
@@ -316,14 +357,35 @@
     }
 
     .catalog {
+        padding: 0 0 50px;
+
         &__tabs {
             flex-wrap: wrap;
             margin: 26px 5px;
         }
+
         &__content {
             margin: 26px 0 0;
         }
-    }    
+    }
+
+
+    .feed {
+        &__item {
+            display: block;
+            text-align: center;
+            margin: 60px 10px 0;
+        }
+
+        &__text {
+            margin: 15px 0 0;
+        }
+
+        &__descr {
+            margin: 15px 0 0;
+            text-align: justify;
+        }
+    }
 }
 
 @media (max-width: 450px) {
@@ -375,9 +437,21 @@
 
     .consultation {
         min-height: 400px;
-        &__descr{
+
+        &__descr {
             font-size: 15px;
             line-height: 20px;
+        }
+    }
+
+    .feed {
+        &__item {
+            margin-top: 40px;
+        }
+
+        &__img {
+            width: 120px;
+            height: 120px;
         }
     }
 }
@@ -392,6 +466,13 @@
         &__subheader {
             font-size: 14px;
             line-height: 14px;
+        }
+    }
+
+    .footer {
+        &__info {
+            padding: 25px 10px; 
+            
         }
     }
 }
