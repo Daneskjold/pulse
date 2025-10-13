@@ -386,6 +386,15 @@
             text-align: justify;
         }
     }
+
+    .modal {
+        &__close {
+            top: unset;
+            bottom: -50px;
+            right: 50%;
+            transform: translateX(50%);
+        }
+    }
 }
 
 @media (max-width: 450px) {
@@ -474,5 +483,9 @@
             padding: 25px 10px; 
             
         }
+    }
+
+    .modal {
+        width: 100%;
     }
 }

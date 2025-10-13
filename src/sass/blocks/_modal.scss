@@ -1,0 +1,78 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    min-height: 400px;
+    background: #F2F2F2;
+    padding: 34px 0 40px;
+    text-align: center;
+
+    &__close {
+        position: absolute;
+        top: 0;
+        right: -40px;
+        font-size: 38px;
+        line-height: 17px;
+        color: v.$main-color;
+        cursor: pointer;
+    }
+
+    &__subtitle {
+        color: #0D0D0D;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 19px;
+    }
+
+    &__descr {
+        color: #0D0D0D;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 14px;
+        margin-top: 10px;
+    }
+
+    &_mini {
+        min-height: 140px;
+        padding: 34px 69px;
+
+        .modal__descr {
+            line-height: 21px;
+        }
+    }
+
+    input.error {
+        border: 1px solid red;
+        margin: 0;
+    }
+
+    label.error {
+        margin: 0 0 15px;
+        color: v.$main-color;
+        font-size: 14px;
+    }
+
+    .button_submit:hover {
+        box-shadow: 3px 3px 8px v.$red-shadow;
+    }
+}
+
+#consultation,
+#order,
+#thanks {
+    display: none;
+}

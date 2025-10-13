@@ -12,7 +12,9 @@
 @use 'blocks/catalog';
 @use 'blocks/footer';
 @use 'blocks/feed';
+@use 'blocks/modal';
 @use 'base/media';
+
 
 body {
     font-family: 'Museo Sans', sans-serif;
