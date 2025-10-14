@@ -33,9 +33,6 @@
         line-height: 20px;
         font-weight: 700;
         text-decoration: none;
-        &:hover {
-            text-shadow: 0 0 3px #fff;
-        }
     }
 
     &__social {
@@ -57,9 +54,6 @@
             display: block;
             width: 25px;
             height: 25px;
-        }
-        &:hover {
-            box-shadow: 0 0 20px #FFFFFF;
         }
     }
 }

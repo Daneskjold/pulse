@@ -25,12 +25,3 @@ body {
     max-width: 950px;
     margin: 0 auto;
 }
-
-a {
-    transition: text-shadow .2s, transform .2s;
-    &:hover {
-        text-shadow: 0px 0px 2px #FFFFFF;
-        transform: translate(1px,-1px);
-    }
-}
-

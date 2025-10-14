@@ -480,12 +480,102 @@
 
     .footer {
         &__info {
-            padding: 25px 10px; 
-            
+            padding: 25px 10px;
+
         }
     }
 
     .modal {
         width: 100%;
+    }
+}
+
+//Все :hover эффекты на сайте
+
+//:hover эффекты на сылках в _promo.scss
+@media (hover:hover) {
+    a {
+        transition: text-shadow .2s, transform .2s;
+
+        &:hover {
+            text-shadow: 0px 0px 2px #FFFFFF;
+            transform: translate(1px, -1px);
+        }
+    }
+}
+
+@media (hover:none) {
+    a {
+        transition: text-shadow .2s, transform .2s;
+
+        &:active {
+            text-shadow: 0px 0px 2px #FFFFFF;
+            transform: translate(1px, -1px);
+        }
+    }
+}
+
+//:hover эффекты на кнопках в _buttons.scss
+
+@media (hover:hover) {
+    .button {
+        &:hover {
+            text-shadow: 0px 0px 1px #FFFFFF;
+            box-shadow: 2px 2px 8px #FFFFFF;
+            transform: translate(1px, -1px);
+        }
+
+        &_redshad:hover {
+            box-shadow: 3px 3px 8px v.$red-shadow;
+        }
+    }
+}
+
+@media (hover:none) {
+    .button {
+        &:active {
+            text-shadow: 0px 0px 1px #FFFFFF;
+            box-shadow: 2px 2px 8px #FFFFFF;
+            transform: translate(1px, -1px);
+        }
+
+        &_redshad:active {
+            box-shadow: 3px 3px 8px v.$red-shadow;
+        }
+    }
+}
+
+//:hover эффекты на ссылки в _footer.scss
+
+@media (hover:hover) {
+    .footer {
+        &__phone:hover {
+            text-shadow: 0 0 3px #fff;
+        }
+
+        &__social-item:hover {
+            box-shadow: 0 0 20px #FFFFFF;
+        }
+    }
+}
+
+@media (hover:none) {
+    .footer {
+        &__phone:active {
+            text-shadow: 0 0 3px #fff;
+        }
+
+        &__social-item:acrive {
+            box-shadow: 0 0 20px #FFFFFF;
+        }
+    }
+}
+
+//:hover эффекты на табы в _catalog.scss
+
+@media (hover:hover) {
+    .catalog__tab:hover {
+        box-shadow: 3px 3px 20px v.$main-color;
+        border: none;
     }
 }
