@@ -1,3 +1,5 @@
+@use '../base/animations' as a;
+
 .advantages {
     min-height: 473px;
     padding: 70px 0 65px;
@@ -15,6 +17,12 @@
         display: block;
         max-width: 100%;
         margin: 0 auto;
+        &--animated {
+            animation: heartbeat 1.5s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
     }
     &__subtitle {
         font-weight: 700;

@@ -1,5 +1,6 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
+@use 'base/animations' as a;
 
 @use 'blocks/promo';
 @use 'blocks/header';
@@ -13,6 +14,7 @@
 @use 'blocks/footer';
 @use 'blocks/feed';
 @use 'blocks/modal';
+@use 'blocks/pageup';
 @use 'base/media';
 
 
