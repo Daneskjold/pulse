@@ -1,3 +1,8 @@
+@use 'libs/animate.min';
+@use 'libs/bootstrap-reboot.min';
+@use 'libs/fonts';
+@use 'libs/slick';
+
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 @use 'base/animations' as a;
